@@ -1,0 +1,28 @@
+.menu--social {
+
+  // hide the link text, just leave it for screen readers
+  a span {
+    @extend .screen-reader-text;
+  }
+  li {
+    display: inline-block;
+  }
+  [href*="facebook.com"] {
+    @extend .fa, .fa-facebook;
+  }
+  [href*="twitter.com"] {
+    @extend .fa, .fa-twitter;
+  }
+  [href*="codepen.io"] {
+    @extend .fa, .fa-codepen;
+  }
+  [href*="linkedin.com"] {
+    @extend .fa, .fa-linkedin;
+  }
+  [href*="github.com"] {
+    @extend .fa, .fa-github;
+  }
+  a {
+    font-size: 2.5rem !important;
+  }
+}

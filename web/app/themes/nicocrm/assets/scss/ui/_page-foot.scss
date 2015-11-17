@@ -1,0 +1,6 @@
+.page-foot {
+  @extend %content-background;
+  padding: 20px;
+
+  p { margin: 0; }
+}

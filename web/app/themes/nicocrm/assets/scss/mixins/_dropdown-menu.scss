@@ -1,0 +1,40 @@
+@mixin dropdown-menu($direction) {
+  li {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: 5px 20px;
+    //background-color: $menu-bg;
+    margin-right: -4px;  // get rid of spacing between list items
+    //transition: all 0.2s;
+
+    &:hover {
+      //background-color: $menu-hover;
+    }
+    &:hover .sub-menu {
+      max-height: 300px;
+      visibility: visible;
+      transition: all 0.4s linear;
+    }
+  }
+  .sub-menu {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    @if $direction == up {
+      bottom: 100%; // align to top of parent element (presumably they have the same size!)
+    } @else {
+      top: 100%; // align to bottom of parent element (presumably they have the same size!)
+    }
+    left: 0;
+    box-shadow: none;
+    max-height: 0;
+    width: 150px;
+
+    overflow: hidden;
+
+    li {
+      display: block;
+    }
+  }
+}

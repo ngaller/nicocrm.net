@@ -1,0 +1,24 @@
+.pagination {
+  float: right;
+  a {
+    @extend .form-control;
+    @extend .page-control;
+    display: block;
+    padding: 5px;
+    //border: 1px solid $header-fg;
+    //margin: 5px;
+    //color: $header-fg;
+
+    &:hover {
+      color: $header-fg-active;
+    }
+  }
+
+  .category-nav {
+    width: 100%;
+  }
+
+    //li {
+  //  display: inline-block;
+  //}
+}

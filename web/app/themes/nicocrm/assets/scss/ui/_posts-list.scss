@@ -1,0 +1,41 @@
+.posts-list {
+  display: flex;
+  flex-flow: row wrap;
+
+  article {
+    flex: 1 0 auto;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: white;
+
+    h5 {
+      //font-size: 2.0rem;
+    }
+
+    h5, p {
+      margin-bottom: 0.8rem;
+    }
+
+    .by, .author, .tags-title, .footer-category {
+      display: none;
+    }
+
+    .comment-count {
+      font-style: italic;
+    }
+
+    .article-header {
+      overflow: hidden;
+    }
+
+    @include breakpoint($tablet) {
+      width: 40%;  // 2 columns (flex will expand as needed to fill the space)
+      margin: 10px;
+    }
+
+    @include breakpoint($large-desktop) {
+      width: 22%;  // 4 columns
+    }
+  }
+}

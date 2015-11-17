@@ -1,0 +1,22 @@
+.search-form {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    @extend .fa, .fa-search;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px;
+    border: none;
+
+    span {
+      @extend .screen-reader-text;
+    }
+  }
+}

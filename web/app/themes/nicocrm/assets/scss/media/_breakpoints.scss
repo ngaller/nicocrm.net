@@ -1,0 +1,8 @@
+// Media Queries Breakpoints (use with breakpoint mixin)
+// Can be tweaked if need be.
+@include breakpoint-set('to ems', true);
+$large-phone:       30em; // Larger phones (or phones in landscape mode)
+$tablet:      		768px; // Portrait tablet to landscape tablet
+$desktop:       	1025px; // Small desktop to large desktop
+$large-desktop:     1280px;
+$hi-dpi:            min-resolution 1.5dppx;

@@ -1,0 +1,14 @@
+article {
+  .category {
+    @extend .fa, .fa-tag;
+    font-weight: bold;
+  }
+
+  .entry-time {
+    @extend .fa, .fa-calendar-o;
+  }
+
+  .entry-meta {
+    color: $meta-gray;
+  }
+}

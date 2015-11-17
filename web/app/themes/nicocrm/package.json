@@ -1,0 +1,23 @@
+{
+  "name": "nicocrm-theme",
+  "version": "1.0.0",
+  "description": "Wordpress Theme for nicocrm.net",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicolas Galler <ngaller@gmail.com> (http://sssworld.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "breakpoint-sass": "^2.6.1",
+    "del": "^2.0.2",
+    "font-awesome": "^4.4.0",
+    "gulp": "^3.9.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-sass": "^2.1.0",
+    "run-sequence": "^1.1.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0"
+  }
+}

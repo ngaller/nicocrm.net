@@ -1,0 +1,66 @@
+.menu--main {
+  // MOBILE NAVIGATION
+  @include breakpoint(0 ($tablet - 1px)) {
+    max-height: 30px;
+    text-align: right;
+    display: block;
+    transition: max-height 0.4s linear;
+    overflow: hidden;
+    font-size: 2.4rem;
+
+    &:before {
+      content: $fa-var-navicon;
+      font: normal normal normal 28px/1 FontAwesome;
+    }
+    &:hover {
+      max-height: 500px;
+    }
+
+    li {
+      text-align: left;
+    }
+
+    .current-menu-item > a {
+      color: $header-fg-active;
+    }
+    .sub-menu {
+      margin-left: 20px;
+    }
+  }
+
+  // TABLET AND ABOVE
+  @include breakpoint($tablet) {
+    @include dropdown-menu(up);
+
+    // use a table display to stretch across the container
+    display: flex;
+    width: 100%;
+    font-weight: bold;
+
+    a {
+      font-size: 2.0rem;
+    }
+    a:hover {
+    }
+
+    .current-menu-item {
+      border-bottom: 2px solid $header-fg;
+    }
+
+    .menu-item:hover {
+      border-bottom: 2px solid $header-fg-active;
+    }
+
+    & > li {
+      //display: table-cell;
+      flex: 1;
+      margin: 0 20px;
+    }
+
+    li {
+      text-align: center;
+      border-bottom: 2px solid transparent;
+      padding: 0;
+    }
+  }
+}

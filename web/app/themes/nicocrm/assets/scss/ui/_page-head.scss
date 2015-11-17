@@ -1,0 +1,77 @@
+.page-head {
+  position: relative;
+  font-family: 'Lato', sans-serif;
+
+  background: transparent url(../images/chrome-768.jpg);
+
+  background-size: cover;
+  color: $header-fg;
+
+  a {
+    //font-size: 2.0rem;
+    color: $header-fg;
+  }
+
+  // PHONE
+  @include breakpoint(0 ($tablet - 1px)){
+    $pad: 10px;
+
+    .inner-header {
+      padding: $pad;
+    }
+
+    .header-meta {
+      // hide top meta box on mobile (they still have a search form at the bottom)
+      display: none;
+    }
+
+    .menu--social {
+      position: absolute;
+      top: $pad;
+      right: $pad;
+    }
+  }
+
+  // TABLET
+  @include breakpoint($tablet) {
+    $pad: 40px;
+
+    background: transparent url(../images/chrome-1024.jpg);
+    height: 300px;
+
+    .menu-link {
+      display: none;
+    }
+
+    a:hover {
+      transition: all 0.2s;
+      color: $header-fg-active;
+    }
+    .header-meta {
+      text-align: right;
+
+      .rss-feed {
+        display: inline;
+      }
+    }
+
+    .inner-header {
+      padding: $pad;
+      position: relative;
+      height: 100%;
+    }
+
+    .header-bottom {
+      position: absolute;
+      bottom: $pad;
+      right: $pad;
+      width: 100%;
+      //right: 0;
+    }
+  }
+
+  @include breakpoint($desktop) {
+    background: transparent url(../images/chrome-1680.jpg);
+    height: 370px;
+  }
+}
