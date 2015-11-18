@@ -1,0 +1,12 @@
+.comment-respond {
+  input, textarea {
+    width: 100%;
+  }
+
+  @include breakpoint($tablet) {
+    input, textarea {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+}

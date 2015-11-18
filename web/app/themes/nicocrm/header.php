@@ -23,12 +23,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
-    <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-touch-icon.png">
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
-    <!--[if IE]>
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-    <![endif]-->
-    <?php // or, set /favicon.ico for IE10 win ?>
+    <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/build/images/apple-touch-icon.png">
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/build/images/favicon.png">
     <meta name="msapplication-TileColor" content="#f01d4f">
     <meta name="msapplication-TileImage"
           content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
@@ -71,7 +67,7 @@
                     <nav role="navigation">
                         <?php wp_nav_menu(array(
                             'container' => false,                           // remove nav container
-                            'menu_class' => 'menu menu--social',               // adding custom nav class
+                            'menu_class' => 'menu menu--social social-links',               // adding custom nav class
                             'theme_location' => 'social-links',                 // where it's located in the theme
                             'before' => '',                                 // before the menu
                             'after' => '',                                  // after the menu

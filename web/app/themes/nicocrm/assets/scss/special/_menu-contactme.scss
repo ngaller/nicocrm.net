@@ -1,0 +1,12 @@
+.menu--contactme {
+  position: relative;
+  font-size: 3.0rem;
+  margin: 0 30px;
+
+  a span {
+    display: inline-block;
+    position: absolute;
+    left: 2em;
+    color: $content-fg;
+  }
+}

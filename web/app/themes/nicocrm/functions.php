@@ -219,7 +219,7 @@ $GLOBALS['comment'] = $comment; ?>
                  src="<?php echo get_template_directory_uri(); ?>/build/images/nothing.gif"/>
             <?php // end custom gravatar call ?>
             <?php
-            printf(__('<cite class="fn">%1$s</cite> %2$s', 'bonestheme'), get_comment_author_link());
+            printf(__('<cite class="fn">%1$s</cite> ', 'bonestheme'), get_comment_author_link());
             edit_comment_link(__('(Edit)', 'bonestheme'), '  ', ''); ?>
             <time datetime="<?php comment_time('Y-m-j'); ?>"><a
                     href="<?php echo htmlspecialchars(get_comment_link($comment->comment_ID)) ?>"><?php comment_time(__('F jS, Y', 'bonestheme')); ?> </a>

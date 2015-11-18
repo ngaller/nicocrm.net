@@ -29,13 +29,18 @@ article by Harry Roberts "Modern CSS Architecture and Front-End Development"
 		"ui/page-body",
 		"ui/page-control",
 		"ui/posts-list",
-		"ui/article";
+		"ui/article",
+		"ui/commentlist",
+		"ui/comment-respond";
 
 // more specific widgets
-@import "special/menu-social",
+@import "special/social-links",
+		"special/menu-social",
+		"special/menu-contactme",
 		"special/menu-main",
 		"special/search-form",
-		"special/rss-feed";
+		"special/rss-feed",
+		"special/article-single";
 
 /*********************
 IMPORTING MODULES

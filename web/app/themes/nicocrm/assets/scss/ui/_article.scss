@@ -1,14 +1,31 @@
+// Common style for article (page / post)
 article {
+  background-color: $content-bg;
+  color: $content-fg;
+  border: 1px solid $border-color;
+  border-radius: 2px;
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+
+  .by, .author, .tags-title, .footer-category {
+    display: none;
+  }
+
   .category {
-    @extend .fa, .fa-tag;
+    @extend .fa, .fa-folder-open;
     font-weight: bold;
+  }
+
+  .tags {
+    @extend .fa, .fa-tag;
   }
 
   .entry-time {
     @extend .fa, .fa-calendar-o;
   }
 
-  .entry-meta {
+  .entry-meta, .article-footer {
     color: $meta-gray;
   }
 }

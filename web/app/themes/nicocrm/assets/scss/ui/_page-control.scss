@@ -1,6 +1,7 @@
 //////////////////////////////////////////
 // page-control: Generic class used for controls that are outside of the articles
-.page-control {
+// (we add a body selector to override the default form control styles in forms.scss)
+body .page-control {
   color: $header-fg;
   background-color: $header-bg;
   border: 1px solid $header-border-color;

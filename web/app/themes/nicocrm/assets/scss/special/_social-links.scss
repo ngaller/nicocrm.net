@@ -1,0 +1,17 @@
+.social-links {
+  [href*="facebook.com"] {
+    @extend .fa, .fa-facebook;
+  }
+  [href*="twitter.com"] {
+    @extend .fa, .fa-twitter;
+  }
+  [href*="codepen.io"] {
+    @extend .fa, .fa-codepen;
+  }
+  [href*="linkedin.com"] {
+    @extend .fa, .fa-linkedin;
+  }
+  [href*="github.com"] {
+    @extend .fa, .fa-github;
+  }
+}

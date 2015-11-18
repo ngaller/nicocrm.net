@@ -2,7 +2,8 @@
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .form-control {
-  border-radius: 4px;
+  border: 1px solid $border-color;
+  border-radius: 3px;
   box-shadow: none;
 }
 
@@ -63,3 +64,11 @@ label > .label-body {
   display: inline-block;
   margin-left: .5rem;
   font-weight: normal; }
+
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+form p {
+  // reduce spacing for paragraphs inside of forms
+  margin-bottom: .4rem;
+}

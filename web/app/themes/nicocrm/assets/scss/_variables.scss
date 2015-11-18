@@ -49,9 +49,13 @@ $header-fg-active:  $color-primary;
 // we don't actually use this color for the header, we use an image, but this is an approximation used for controls
 $header-bg:         $color-primary-verydark;
 $header-border-color: $color-primary-darker;
+// color for body (outside of article content)
 $body-fg:           #cbebf3;
 $border-color:      #ccc;
 $disabled-gray:     #cfcfcf;
+// color for article content
+$content-fg:        $color-primary-verydark;
+$content-bg:        $white;
 
 
 /*

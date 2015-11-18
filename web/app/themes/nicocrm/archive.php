@@ -16,7 +16,7 @@
             <div class="posts-list"><?php
             while (have_posts()) {
                 the_post();
-                get_template_part('post-summary');
+                get_template_part('post-formats/format-summary');
             }
             ?></div><?php
             bones_page_navi();
