@@ -9,13 +9,16 @@
     //transition: all 0.2s;
 
     &:hover {
-      //background: transparent url(../images/1px-dark-opaque.png);
       background: transparent url(../images/1px-almost-transparent.png);
     }
     &:hover .sub-menu {
       max-height: 300px;
       visibility: visible;
       transition: max-height 0.4s linear;
+    }
+
+    a {
+      display: block;
     }
   }
   .sub-menu {
