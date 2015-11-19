@@ -30,7 +30,7 @@ article {
   }
 
   ul {
-    // revert to default padding, otherwise the list decoration won't show
-    padding-left: 40px;
+    // add some padding, otherwise the list decoration won't show
+    padding-left: 2em;
   }
 }
