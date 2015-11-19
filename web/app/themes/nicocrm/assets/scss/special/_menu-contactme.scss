@@ -1,6 +1,7 @@
+// the "contact me" menu that is shown on the "In Touch" page
 .menu--contactme {
   position: relative;
-  font-size: 3.0rem;
+  font-size: 1.8rem;
   margin: 0 30px;
 
   a span {
@@ -8,5 +9,13 @@
     position: absolute;
     left: 2em;
     color: $content-fg;
+  }
+
+  @include breakpoint($tablet) {
+    font-size: 2.4rem;
+  }
+
+  @include breakpoint($desktop) {
+    font-size: 3.0rem;
   }
 }

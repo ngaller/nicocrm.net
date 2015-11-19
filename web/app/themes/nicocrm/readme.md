@@ -1,6 +1,8 @@
 # nicocrm theme
 
-Based on the Bones theme.
+Based on the Bones theme.  
+
+I like Sage better but wanted something simpler.
 
 ## Build Process
 

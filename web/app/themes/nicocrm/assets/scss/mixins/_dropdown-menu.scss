@@ -9,15 +9,17 @@
     //transition: all 0.2s;
 
     &:hover {
-      //background-color: $menu-hover;
+      //background: transparent url(../images/1px-dark-opaque.png);
+      background: transparent url(../images/1px-almost-transparent.png);
     }
     &:hover .sub-menu {
       max-height: 300px;
       visibility: visible;
-      transition: all 0.4s linear;
+      transition: max-height 0.4s linear;
     }
   }
   .sub-menu {
+    width: 100%;  // same width as parent
     display: block;
     visibility: hidden;
     position: absolute;
@@ -29,7 +31,6 @@
     left: 0;
     box-shadow: none;
     max-height: 0;
-    width: 150px;
 
     overflow: hidden;
 

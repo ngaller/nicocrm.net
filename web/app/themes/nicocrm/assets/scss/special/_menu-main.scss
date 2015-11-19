@@ -32,7 +32,7 @@
   @include breakpoint($tablet) {
     @include dropdown-menu(up);
 
-    // use a table display to stretch across the container
+    // use a flexbox display to stretch across the container
     display: flex;
     width: 100%;
     font-weight: bold;
