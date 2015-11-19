@@ -28,4 +28,9 @@ article {
   .entry-meta, .article-footer {
     color: $meta-gray;
   }
+
+  ul {
+    // revert to default padding, otherwise the list decoration won't show
+    padding-left: 40px;
+  }
 }
