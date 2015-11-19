@@ -12,12 +12,15 @@
     @extend .fa, .fa-linkedin;
   }
   [href^="/feed"] {
-    @extend .fa, .fa-github;
+    @extend .fa, .fa-rss;
   }
   [href^="mailto:"] {
     @extend .fa, .fa-envelope;
   }
   [href*="plus.google.com"] {
     @extend .fa, .fa-google-plus;
+  }
+  [href*="github.com"] {
+    @extend .fa, .fa-github;
   }
 }
