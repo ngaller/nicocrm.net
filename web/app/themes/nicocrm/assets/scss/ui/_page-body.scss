@@ -1,17 +1,10 @@
-%content-background {
-  background: url(../images/chrome-pattern.jpg);
-}
+#container {
+  // use flexbox to stick the footer to the bottom of the page
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
-.page-content {
-  @extend %content-background;
-}
-
-.inner-content {
-  padding: 10px;
-}
-
-@include breakpoint($tablet) {
-  .inner-content {
-    padding: 20px;
+  & > .page-content {
+    flex: 1;
   }
 }

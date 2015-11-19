@@ -23,10 +23,11 @@ article by Harry Roberts "Modern CSS Architecture and Front-End Development"
 @import "common";
 
 // specific page parts
-@import "ui/page-head",
+@import "ui/page-body",  // body tag
+		"ui/page-head",	 // header
+		"ui/page-foot",	 // footer
+		"ui/page-content", // content
 		"ui/pagination",
-		"ui/page-foot",
-		"ui/page-body",
 		"ui/page-control",
 		"ui/posts-list",
 		"ui/article",

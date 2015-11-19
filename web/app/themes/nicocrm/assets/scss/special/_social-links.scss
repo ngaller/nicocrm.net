@@ -11,7 +11,13 @@
   [href*="linkedin.com"] {
     @extend .fa, .fa-linkedin;
   }
-  [href*="github.com"] {
+  [href^="/feed"] {
+    @extend .fa, .fa-github;
+  }
+  [href^="mailto:"] {
+    @extend .fa, .fa-github;
+  }
+  [href*="plus.google.com"] {
     @extend .fa, .fa-github;
   }
 }

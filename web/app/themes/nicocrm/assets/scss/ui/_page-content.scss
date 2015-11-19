@@ -1,0 +1,17 @@
+%content-background {
+  background: url(../images/chrome-pattern.jpg);
+}
+
+.page-content {
+  @extend %content-background;
+}
+
+.inner-content {
+  padding: 10px;
+}
+
+@include breakpoint($tablet) {
+  .inner-content {
+    padding: 20px;
+  }
+}
