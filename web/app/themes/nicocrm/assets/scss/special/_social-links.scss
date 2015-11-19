@@ -15,9 +15,9 @@
     @extend .fa, .fa-github;
   }
   [href^="mailto:"] {
-    @extend .fa, .fa-github;
+    @extend .fa, .fa-envelope;
   }
   [href*="plus.google.com"] {
-    @extend .fa, .fa-github;
+    @extend .fa, .fa-google-plus;
   }
 }
