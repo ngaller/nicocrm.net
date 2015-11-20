@@ -3,7 +3,8 @@
   flex-flow: row wrap;
 
   article {
-    flex: 1 0 auto;
+    flex: 0 0 auto;
+    width: 100%;
 
     h5 {
       //font-size: 2.0rem;
@@ -22,12 +23,13 @@
     }
 
     @include breakpoint($tablet) {
-      width: 40%;  // 2 columns (flex will expand as needed to fill the space)
+      width: calc(50% - 20px);  // 2 columns, flex would be able to calculate that for us but it doesn't work
+                                // when there is a varied number of items per line
       margin: 10px;
     }
 
     @include breakpoint($large-desktop) {
-      width: 22%;  // 4 columns
+      width: calc(25% - 20px);  // 4 columns
     }
   }
 }
