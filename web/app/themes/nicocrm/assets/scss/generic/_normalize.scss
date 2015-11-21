@@ -101,3 +101,8 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
+// ensure font properties on text controls are inherited instead of using the user agent stylesheet
+input, button, select, textarea {
+    font: inherit;
+}
