@@ -137,10 +137,12 @@ function bones_scripts_and_styles()
     if (!is_admin()) {
 
         // modernizr (without media query polyfill)
-        wp_register_script('bones-modernizr', get_stylesheet_directory_uri() . '/assets/js/libs/modernizr.custom.min.js', array(), '2.5.3', false);
+//        wp_register_script('bones-modernizr', get_stylesheet_directory_uri() . '/assets/js/libs/modernizr.custom.min.js', array(), '2.5.3', false);
 
         // register main stylesheet
         wp_register_style('bones-stylesheet', get_stylesheet_directory_uri() . '/build/css/style.css', array(), '', 'all');
+
+        wp_register_style('open-sans', 'https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,400,600');
 
         // ie-only style sheet
 //        wp_register_style('bones-ie-only', get_stylesheet_directory_uri() . '/build/css/ie.css', array(), '');
@@ -154,11 +156,12 @@ function bones_scripts_and_styles()
         wp_register_script('bones-js', get_stylesheet_directory_uri() . '/assets/js/scripts.js', array('jquery'), '', true);
 
         // enqueue styles and scripts
-        wp_enqueue_script('bones-modernizr');
+//        wp_enqueue_script('bones-modernizr');
         wp_enqueue_style('bones-stylesheet');
-        wp_enqueue_style('bones-ie-only');
+        wp_enqueue_style('open-sans');
+//        wp_enqueue_style('bones-ie-only');
 
-        $wp_styles->add_data('bones-ie-only', 'conditional', 'lt IE 9'); // add conditional wrapper around ie stylesheet
+//        $wp_styles->add_data('bones-ie-only', 'conditional', 'lt IE 9'); // add conditional wrapper around ie stylesheet
 
         /*
         I recommend using a plugin to call jQuery

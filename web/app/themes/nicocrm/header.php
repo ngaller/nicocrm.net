@@ -24,10 +24,6 @@
     <meta name="theme-color" content="#121212">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
-          type='text/css'>
-
     <?php // wordpress head functions ?>
     <?php wp_head(); ?>
     <?php // end of wordpress head ?>
