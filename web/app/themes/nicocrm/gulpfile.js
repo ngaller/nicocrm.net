@@ -32,7 +32,7 @@ gulp.task('fonts', function() {
 gulp.task('sass', function() {
     return(gulp.src(source.css)
         .pipe(sass({
-            outputStyle: 'expanded',
+            outputStyle: 'compact',
             includePaths: ['./node_modules']
         }).on('error', sass.logError))
         .pipe(gulp.dest(output.css)))
