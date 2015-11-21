@@ -71,7 +71,8 @@
                     <!-- Search Form -->
                     <div class="header-meta">
                         <?php get_search_form(true); ?>
-                        <a href="<?php bloginfo('rss2_url') ?>" class="rss-feed" title="RSS Feed">RSS</a>
+                        <a href="http://feeds.feedburner.com/nicocrm" class="rss-feed" title="Subscribe to my feed"
+                           rel="alternate" type="application/rss+xml">RSS</a>
                     </div>
                 </div>
             </div>
