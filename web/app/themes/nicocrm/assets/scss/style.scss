@@ -1,25 +1,4 @@
-/*! Made with Bones: http://themble.com/bones :) */
-
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Main Stylesheet
-
-Here's where the magic happens. Here, you'll see we are calling in
-the separate media queries. The base mobile goes outside any query
-and is called at the beginning, after that we call the rest
-of the styles inside media queries.
-
-Helpful articles on Sass file organization:
-http://thesassway.com/advanced/modular-css-naming-conventions
-
-The organization of the stylesheets in this site are inspired from the
-article by Harry Roberts "Modern CSS Architecture and Front-End Development"
-(Smashing Book #4)
-
-******************************************************************/
-
+// shared stuff
 @import "common";
 
 // specific page parts
@@ -43,13 +22,7 @@ article by Harry Roberts "Modern CSS Architecture and Front-End Development"
 		"special/rss-feed",
 		"special/article-single";
 
-/*********************
-IMPORTING MODULES
-Modules are reusable blocks or elements we use throughout the project.
-We can break them up as much as we want or just keep them all in one.
-I mean, you can do whatever you want. The world is your oyster. Unless
-you hate oysters, then the world is your peanut butter & jelly sandwich.
-*********************/
+// Modules
 
 // alert boxes
 @import "modules/alerts";
@@ -57,61 +30,6 @@ you hate oysters, then the world is your peanut butter & jelly sandwich.
 // buttons
 @import "modules/buttons";
 
-/*********************
- MEDIA QUERIES
- Styles below are specific to a certain size or media.
- The base styles (included above) are for the mobile.
- (not sure we need this because I would rather have the media specific stuff inside of each style!)
-*********************/
-//
-//LARGER MOBILE DEVICES
-//This is for devices like the Galaxy Note or something that's
-//larger than an iPhone but smaller than a tablet. Let's call them
-//tweeners.
-//*********************/
-//@media only screen and (min-width: $phone) {
-//
-//	// styles in 481up.scss
-//	@import "breakpoints/481up";
-//
-//} // end of media query
-//
-///*********************
-//TABLET & SMALLER LAPTOPS
-//This is the average viewing window. So Desktops, Laptops, and
-//in general anyone not viewing on a mobile device. Here's where
-//you can add resource intensive styles.
-//*********************/
-//@media only screen and (min-width: $tablet) {
-//
-//	// styles in 768up.scss
-//	@import "breakpoints/768up";
-//
-//} // end of media query
-//
-///*********************
-//DESKTOP
-//This is the average viewing window. So Desktops, Laptops, and
-//in general anyone not viewing on a mobile device. Here's where
-//you can add resource intensive styles.
-//*********************/
-//@media only screen and (min-width: $desktop) {
-//
-//	// styles in 1030up.scss
-//	@import "breakpoints/1030up";
-//
-//} // end of media query
-//
-///*********************
-//LARGE VIEWING SIZE
-//This is for the larger monitors and possibly full screen viewers.
-//*********************/
-//@media only screen and (min-width: $large-desktop) {
-//
-//	// styles in 1240up.scss
-//	@import "breakpoints/1240up";
-//
-//} // end of media query
 
 /*********************
 RETINA (2x RESOLUTION DEVICES)
