@@ -11,7 +11,7 @@
   [href*="linkedin.com"] {
     @extend .fa, .fa-linkedin;
   }
-  [href^="/feed"] {
+  [href^="/feed"], [href*="feeds.feedburner.com"] {
     @extend .fa, .fa-rss;
   }
   [href^="mailto:"] {
