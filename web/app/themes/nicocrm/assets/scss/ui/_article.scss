@@ -29,7 +29,7 @@ article {
     color: $meta-gray;
   }
 
-  ul {
+  ul, ol {
     // add some padding, otherwise the list decoration won't show
     padding-left: 2em;
   }
