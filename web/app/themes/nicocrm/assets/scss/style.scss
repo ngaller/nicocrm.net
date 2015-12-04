@@ -2,7 +2,8 @@
 @import "common";
 
 // specific page parts
-@import "ui/page-body",  // body tag
+@import "ui/wp-styles",  // default WP styles
+		"ui/page-body",  // body tag
 		"ui/page-head",	 // header
 		"ui/page-foot",	 // footer
 		"ui/page-content", // content
