@@ -8,6 +8,10 @@ article {
   margin: 10px auto;
   padding: 10px;
 
+  .entry-content {
+    @extend %clearfix;
+  }
+
   .by, .author, .tags-title, .footer-category {
     display: none;
   }
