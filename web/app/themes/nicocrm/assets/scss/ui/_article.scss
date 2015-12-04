@@ -8,6 +8,13 @@ article {
   margin: 10px auto;
   padding: 10px;
 
+  // shortcut to be able to use <pre> instead of <pre><code>
+  pre {
+    @extend code;
+    white-space: pre;
+    padding: 1rem 1.5rem;
+  }
+
   .entry-content {
     @extend %clearfix;
   }
@@ -36,5 +43,9 @@ article {
   ul, ol {
     // add some padding, otherwise the list decoration won't show
     padding-left: 2em;
+  }
+
+  pre {
+
   }
 }
