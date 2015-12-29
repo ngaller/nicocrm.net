@@ -83,6 +83,15 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   h6 { font-size: 1.5rem; }
 }
 
+pre,
+code,
+kbd,
+samp,
+tt{
+  // Disable automatic monospace font scaling
+  font-family:monospace,monospace;
+  font-size:1em;
+}
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
