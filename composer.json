@@ -37,7 +37,7 @@
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
     "wpackagist-plugin/wordpress-importer": "dev-trunk",
-    "johnpbloch/wordpress": "~4.4.0"
+    "johnpbloch/wordpress": "^4.4.0"
   },
   "extra": {
     "installer-paths": {
