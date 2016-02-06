@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<div class="page-content">
+<div class="page-content single">
     <main class="inner-content u-clearfix" role="main" itemscope itemprop="mainContentOfPage"
           itemtype="http://schema.org/Blog">
 
