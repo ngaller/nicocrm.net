@@ -20,7 +20,7 @@ if (have_posts()) {
     <div class="posts-list"><?php
     while (have_posts()) {
         the_post();
-        get_template_part('post-formats/format-summary');
+        get_template_part('post-formats/format-portfolio-summary');
     }
     ?></div><?php
 //    bones_page_navi();
