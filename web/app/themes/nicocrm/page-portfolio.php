@@ -5,7 +5,8 @@
 
 get_header();
 
-query_posts('post_type=page&post_parent='. get_the_ID());
+$paged = get_query_var('paged') ? get_query_var('paged') : 1;
+query_posts('post_type=page&post_parent='. get_the_ID() . '&paged=' . $paged);
 
 ?>
 <div class="page-content">
@@ -23,7 +24,7 @@ if (have_posts()) {
         get_template_part('post-formats/format-portfolio-summary');
     }
     ?></div><?php
-//    bones_page_navi();
+    bones_page_navi();
 } else {
     get_template_part('notfound');
 }
