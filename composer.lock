@@ -109,16 +109,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.5.1",
+            "version": "4.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "494c0f663ff292334947097192392663b596a49e"
+                "reference": "aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/494c0f663ff292334947097192392663b596a49e",
-                "reference": "494c0f663ff292334947097192392663b596a49e",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3",
+                "reference": "aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3",
                 "shasum": ""
             },
             "require": {
@@ -142,7 +142,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2016-04-26 18:01:25"
+            "time": "2016-09-07 15:01:47"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -194,16 +194,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.2.1",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "63f37b9395e8041cd4313129c08ece896d06ca8e"
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/63f37b9395e8041cd4313129c08ece896d06ca8e",
-                "reference": "63f37b9395e8041cd4313129c08ece896d06ca8e",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
                 "shasum": ""
             },
             "require": {
@@ -215,7 +215,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -240,7 +240,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-04-15 10:48:49"
+            "time": "2016-09-01 10:05:43"
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields",
