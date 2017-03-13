@@ -1,0 +1,13 @@
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  figure {
+    flex-basis: 100%;
+    padding: 10px;
+
+    @include breakpoint($large-desktop) {
+      flex-basis: calc(33% - 20px);
+    }
+  }
+}
