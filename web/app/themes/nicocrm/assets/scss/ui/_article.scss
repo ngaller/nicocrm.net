@@ -17,6 +17,10 @@ article {
 
   .entry-content {
     @extend %clearfix;
+
+    img {
+      max-width: 100%;
+    }
   }
 
   .by, .author, .tags-title, .footer-category {
